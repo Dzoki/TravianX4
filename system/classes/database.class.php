@@ -1,7 +1,7 @@
 <?php
 /*
 |---------------------------------------------------------------
-| DO NOT REMOVE OR EDCOPYRIGHT NOTICE
+| DO NOT REMOVE OR EDIT COPYRIGHT NOTICE
 |---------------------------------------------------------------
 |
 | Developers:   Dzoki & Advocaite & SlimShady95
