@@ -9,12 +9,13 @@
 |
 */
 
+session_start();
 if(!isset($_GET['lang'])){
-	$language = 'en';
+    $_SESSION['lang'] = 'en';
 }else{
-	$language = $_GET['lang'];
+    $_SESSION['lang'] = $_GET['lang'];
 }
-include('system/lang/'.$language.'.php');
+include('system/lang/'.$_SESSION['lang'].'.php'); 
 
 /*
 |---------------------------------------------------------------
