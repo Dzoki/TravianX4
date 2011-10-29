@@ -1,17 +1,4 @@
-    <style type="text/css">
-/*<![CDATA[*/
-    div.c1 {left: 274px; top: 100px; display: block; visibility: visible}
-    /*]]>*/
-    </style>
-</head>
 
-<body>
-    <div id="popup" class="moregames c1">
-	<div id="popup-top">
-	    <a class="pclose"></a>
-	</div>
-
-	<div id="popup-content">
 	    <h3 class="pop popgreen bold">More games</h3>
 
 	    <div class="games">
@@ -121,7 +108,4 @@
 		    </div>
 		</div>
 	    </div>
-	</div>
-
-	<div id="popup-bottom"></div>
-    </div>
+	

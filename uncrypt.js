@@ -4264,7 +4264,7 @@ Hash.implement({
     }
 });
 (function () {
-    var b = ["À", "� ", "Á", "á", "Â", "â", "Ã", "ã", "Ä", "ä", "Å", "å", "Ă", "ă", "Ą", "ą", "Ć", "ć", "Č", "č", "Ç", "ç", "Ď", "ď", "Đ", "đ", "È", "è", "É", "é", "Ê", "ê", "Ë", "ë", "Ě", "ě", "Ę", "ę", "Ğ", "ğ", "Ì", "ì", "Í", "í", "Î", "î", "Ï", "ï", "Ĺ", "ĺ", "Ľ", "ľ", "Ł", "ł", "Ñ", "ñ", "Ň", "ň", "Ń", "ń", "Ò", "ò", "Ó", "ó", "Ô", "ô", "Õ", "õ", "Ö", "ö", "Ø", "ø", "ő", "Ř", "ř", "Ŕ", "ŕ", "� ", "š", "Ş", "ş", "Ś", "ś", "Ť", "ť", "Ť", "ť", "Ţ", "ţ", "Ù", "ù", "Ú", "ú", "Û", "û", "Ü", "ü", "Ů", "ů", "Ÿ", "ÿ", "ý", "Ý", "Ž", "ž", "Ź", "ź", "Ż", "ż", "Þ", "þ", "Ð", "ð", "ß", "Œ", "œ", "Æ", "æ", "µ"];
+    var b = ["À", "à", "Á", "á", "Â", "â", "Ã", "ã", "Ä", "ä", "Å", "å", "Ă", "ă", "Ą", "ą", "Ć", "ć", "Č", "č", "Ç", "ç", "Ď", "ď", "Đ", "đ", "È", "è", "É", "é", "Ê", "ê", "Ë", "ë", "Ě", "ě", "Ę", "ę", "Ğ", "ğ", "Ì", "ì", "Í", "í", "Î", "î", "Ï", "ï", "Ĺ", "ĺ", "Ľ", "ľ", "Ł", "ł", "Ñ", "ñ", "Ň", "ň", "Ń", "ń", "Ò", "ò", "Ó", "ó", "Ô", "ô", "Õ", "õ", "Ö", "ö", "Ø", "ø", "ő", "Ř", "ř", "Ŕ", "ŕ", "Š", "š", "Ş", "ş", "Ś", "ś", "Ť", "ť", "Ť", "ť", "Ţ", "ţ", "Ù", "ù", "Ú", "ú", "Û", "û", "Ü", "ü", "Ů", "ů", "Ÿ", "ÿ", "ý", "Ý", "Ž", "ž", "Ź", "ź", "Ż", "ż", "Þ", "þ", "Ð", "ð", "ß", "Œ", "œ", "Æ", "æ", "µ"];
     var a = ["A", "a", "A", "a", "A", "a", "A", "a", "Ae", "ae", "A", "a", "A", "a", "A", "a", "C", "c", "C", "c", "C", "c", "D", "d", "D", "d", "E", "e", "E", "e", "E", "e", "E", "e", "E", "e", "E", "e", "G", "g", "I", "i", "I", "i", "I", "i", "I", "i", "L", "l", "L", "l", "L", "l", "N", "n", "N", "n", "N", "n", "O", "o", "O", "o", "O", "o", "O", "o", "Oe", "oe", "O", "o", "o", "R", "r", "R", "r", "S", "s", "S", "s", "S", "s", "T", "t", "T", "t", "T", "t", "U", "u", "U", "u", "U", "u", "Ue", "ue", "U", "u", "Y", "y", "Y", "y", "Z", "z", "Z", "z", "Z", "z", "TH", "th", "DH", "dh", "ss", "OE", "oe", "AE", "ae", "u"];
     var d = {
         "[\xa0\u2002\u2003\u2009]": " ",
@@ -7360,7 +7360,6 @@ Element.NativeEvents = $extend(Element.NativeEvents, {
 Browser.Engines.isChrome = function () {
     return Browser.Engine.webkit && navigator.userAgent.toLowerCase().indexOf("chrome") != -1
 };
-Browser.isIE9 = Browser.Engine.trident && Browser.Engine.trident6 && navigator.userAgent.toLowerCase().indexOf("msie 9.0") != -1;
 if (Browser.Engine.trident) {
     Element.implement({
         insertAtCursor: function (b, a) {
@@ -7482,7 +7481,7 @@ window.Travian = {
             onException: a.onException || Travian.emptyFunction
         };
         if (!a.url) {
-            a.url = "ajax.php.htm"
+            a.url = "ajax.php"
         }
         if (a.data && a.data.cmd) {
             a.url = a.url + (a.url.indexOf("?") == -1 ? "?" : "&") + "cmd=" + a.data.cmd
@@ -7629,7 +7628,7 @@ window.Travian = {
 };
 Travian.ajax = Travian.ajax.wrap(function (b, a) {
     if (!a.url) {
-        a.url = "ajax.php.htm"
+        a.url = "ajax.php"
     }
     return b(a)
 });
@@ -7824,7 +7823,7 @@ var popupWidget = new Class({
         var c = $$(this.popcontent())[0].getChildren()[1].getChildren("a.prevtxt");
         var a = $$(this.popcontent())[0].getChildren()[1].getChildren("a.nexttxt");
         var b = this;
-        if (d.get("href")[0].indexOf("tutorial.php.htm") != -1) {
+        if (d.get("href")[0].indexOf("tutorial.php") != -1) {
             d.addEvent("click", function (g) {
                 g.stop();
                 b.getTour(d.get("href"))
