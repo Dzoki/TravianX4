@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * INDEX
+ */
 $lang['index']['title'] = 'TRAVIAN  - the online multiplayer strategy game';
 $lang['index']['desc_1'] = 'Game Tour';
 $lang['index']['desc_2'] = 'Forum';
@@ -49,4 +52,19 @@ $lang['index']['screenshots_7_1'] = 'Medals system';
 $lang['index']['screenshots_7_2'] = 'At the end of every week, the very best 10 players and alliances will be elected, topping in different categories; as a reward for their prowess they will receive medals, celebrating their achievements.';
 $lang['index']['screenshots_8_1'] = 'Task system';
 $lang['index']['screenshots_8_2'] = 'To assist you when you first start managing your empire, we have sent the Taskmaster; he will guide you with tips and advice in order to help you build up your village. Just click on the image of the Taskmaster to your left to activate him.';
+
+/**
+ * LOGIN
+ */
+$lang['login']['menu_1'] = 'Homepage';
+$lang['login']['menu_2'] = 'Login';
+$lang['login']['menu_3'] = 'Register';
+$lang['login']['menu_4'] = 'Forum';
+
+$lang['login']['login'] = 'Login';
+
+$lang['login']['desc_1'] = 'Log into game';
+$lang['login']['desc_2'] = 'You must have cookies enabled to be able to log in. If you share this computer with other people you should log out after each session for your own safety.';
+$lang['login']['desc_3'] = 'JavaScript is deactivated. You must activate it in your browser settings to be able to play Travian.';
+$lang['login']['desc_4'] = 'Low resolution and low bandwidth version<br />(Notice: reduced map feature set)';
 ?>
