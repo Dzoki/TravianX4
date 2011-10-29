@@ -6,7 +6,7 @@
     <meta name="description" content="<?php echo $lang['index']['desc_1']; ?>" />
 
     <title><?php echo $lang['index']['title']; ?></title>
-    <link rel="stylesheet" type="text/css" href="http://www.travian.com/gpack/main_default/lang/en/compact.css?929t" />
+    <link rel="stylesheet" type="text/css" href="gpack/main_default/lang/en/compact.css?<?php print time(); ?>" />
     <meta name="content-language" content="en" />
     <meta http-equiv="imagetoolbar" content="no" />
     <script type="text/javascript" src="crypt.js?1310576158">
@@ -49,11 +49,11 @@
 			<ul id="top-navigation">
 			    <li><a href="#tutorial" class="popcon"><?php echo $lang['index']['desc_2']; ?></a></li>
 
-			    <li><a target="blank" href="/forum" id="forum" name="forum"><?php echo$lang['index']['desc_3']; ?></a></li>
+			    <li><a target="blank" href="/forum" id="forum" name="forum"><?php echo $lang['index']['desc_3']; ?></a></li>
 
-			    <li><a href="#moreGames" class="popcon"><?php echo$lang['index']['desc_4']; ?></a></li>
+			    <li><a href="#moreGames" class="popcon"><?php echo $lang['index']['desc_4']; ?></a></li>
 
-			    <li><a id="register" class="popcon" href="#serverRegister" name="register"><?php echo$lang['index']['desc_5']; ?></a></li>
+			    <li><a id="register" class="popcon" href="#serverRegister" name="register"><?php echo $lang['index']['desc_5']; ?></a></li>
 			</ul>
 		    </div>
 
