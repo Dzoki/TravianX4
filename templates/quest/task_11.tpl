@@ -1,0 +1,4 @@
+<div id="ce" style="position: fixed;"><div class="popup3 quest"><div id="drag"></div><a onclick="qst_handle()" href="#" class="close"><img alt="close" class="" src="img/x.gif"></a><div class="questTop"></div><div class="questMiddle"><div id="popup3"><div id="qstd"><h4>Task 11: Change Hero's Production</h4><div class="spoken">„Heroes like you are not only great adventurers, but also great workers and can produce resources. At the moment, you are producing one of each type.”</div><div class="rew">
+                <p class="ta_aw">Order:</p>
+                Change the resource production of your hero in the hero settings.</div><span id="qst_accpt"></span></div>
+        <div class="heroproduction" id="qstbg"></div></div></div><div class="questBottom"></div></div></div>

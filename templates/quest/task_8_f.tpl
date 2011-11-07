@@ -1,0 +1,6 @@
+<div id="ce" style="position: fixed;"><div class="popup3 quest"><div id="drag"></div><a onclick="qst_handle()" href="#" class="close"><img alt="close" class="" src="img/x.gif"></a><div class="questTop"></div><div class="questMiddle"><div id="popup3"><div id="qstd"><h4>Task 8: Messages</h4><div class="spoken">„You received it? Very good.
+<br><br>
+Here is some Gold. With Gold you can do several things, e.g. extend your <b><font color="#71D000">P</font><font color="#FF6F0F">l</font><font color="#71D000">u</font><font color="#FF6F0F">s</font></b> account or increase your resource production.To do so, click on the Gold coins above your village.”</div><div class="rew">
+                <p class="ta_aw">Your reward:</p>
+                <span class="gold"><img alt="Gold" class="gold" src="img/x.gif"> 20</span><br><div class="clear"></div></div><span id="qst_accpt"><a onclick="qst_weiter()" class="arrow">Continue with the next task</a></span></div>
+        <div class="msg" id="qstbg"></div></div></div><div class="questBottom"></div></div></div>

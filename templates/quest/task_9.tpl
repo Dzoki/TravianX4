@@ -1,0 +1,4 @@
+<div id="ce" style="position: fixed;"><div class="popup3 quest"><div id="drag"></div><a onclick="qst_handle()" href="#" class="close"><img alt="close" class="" src="img/x.gif"></a><div class="questTop"></div><div class="questMiddle"><div id="popup3"><div id="qstd"><h4>Task 9: One each.</h4><div class="spoken">„In Travian there is always something to do! While you are waiting for the result of your adventure, build an additional woodcutter, clay pit, iron mine and cropland to level 1.”</div><div class="rew">
+                <p class="ta_aw">Order:</p>
+                Extend one more of each resource tile to level 1.</div><span id="qst_accpt"></span></div>
+        <div class="res_one_of_each" id="qstbg"></div></div></div><div class="questBottom"></div></div></div>
