@@ -95,4 +95,7 @@ $lang['tribe']['romans'] = 'Romans';
 $lang['tribe']['teutons'] = 'Teutons';
 $lang['tribe']['gauls'] = 'Gauls';
 
+/**
+ * ERRORS
+ */
 ?>

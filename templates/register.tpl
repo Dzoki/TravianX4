@@ -55,7 +55,8 @@
 
                             <h4 class="round"><?php echo $lang['register']['desc_5']; ?></h4>
 
-                            <form name="snd" method="post" action="register.php" id="snd">
+                            <form method="post" action="register.php" id="snd">
+                            <input type="hidden" name="type" value="register" />
                                 <table cellpadding="1" cellspacing="1" id="sign_input" class="transparent">
                                     <tbody>
                                         <tr class="top">
