@@ -573,11 +573,7 @@
             <div class="clear"></div>
         </div>
 
-        <div id="footer-container">
-            <div id="footer">
-                &copy; 2011 <a target="blank" class="flink" href="http://forum.ragezone.com/f583/">TravianX</a> All rights reserved.
-            </div>
-        </div>
+<?php include('footer.tpl'); ?>
 
         <div id="preview_container">
             <div id="p-top"></div>

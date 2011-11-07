@@ -3,7 +3,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!-- add title later -->
     <title>TITLE HERE</title>
     <meta http-equiv="cache-control" content="max-age=0" />
     <meta http-equiv="pragma" content="no-cache" />
@@ -11,10 +10,10 @@
     <meta http-equiv="imagetoolbar" content="no" />
     <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
     <meta name="content-language" content="en" />
-    <link href="gpack/main_default/lang/en/compact1.css" rel="stylesheet" type="text/css" />
-    <link href="gpack/lang/en/lang.css" rel="stylesheet" type="text/css" />
+    <link href="gpack/main_default/lang/en/compact.css?asd423" rel="stylesheet" type="text/css" />
+    <link href="gpack/main_default/lang/en/lang.css?asd423" rel="stylesheet" type="text/css" />
     <link href="img/travian_basics.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="crypt.js?1318932101">
+    <script type="text/javascript" src="crypt.js?1319442082">
 </script>
     <style type="text/css">
 /*<![CDATA[*/
@@ -39,20 +38,7 @@
             </div>
 
             <div id="mid">
-
-                <div id="side_navi">
-                    <ul>
-                        <li><a href="HOMEPAGE" title="<?php echo $lang['login']['menu_1']; ?>"><?php echo strtoupper($lang['login']['menu_1']); ?></a></li>
-
-                        <li class="active"><a href="login.php" title="<?php echo $lang['login']['menu_2']; ?>"><?php echo strtoupper($lang['login']['menu_2']); ?></a></li>
-
-                        <li><a href="register.php" title="<?php echo $lang['login']['menu_3']; ?>"><?php echo strtoupper($lang['login']['menu_3']); ?></a></li>
-
-                        <li><a href="/forum" target="_blank" title="<?php echo $lang['login']['menu_4']; ?>"><?php echo strtoupper($lang['login']['menu_4']); ?></a></li>
-
-                    </ul>
-                </div>
-
+<?php include('side_navi.tpl'); ?>
                 <div class="clear"></div>
 
                 <div id="contentOuterContainer">
@@ -163,15 +149,7 @@
 
                 <div class="clear"></div>
             </div>
-
-            <div id="footer">
-                <div id="mfoot">
-
-                    <div class="clear"></div>
-                </div>
-
-                <p class="copyright">&copy; 2011 TravianX All rights reserved.</p>
-            </div>
+<?php include('footer.tpl'); ?>
         </div>
 
         <div id="ce"></div>

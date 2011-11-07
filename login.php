@@ -9,12 +9,7 @@
 |
 */
 
-if(!isset($_GET['lang'])){
-	$language = 'en';
-}else{
-	$language = $_GET['lang'];
-}
-include('system/lang/'.$language.'.php');
+include('system/lang/en.php');
 
 /*
 |---------------------------------------------------------------

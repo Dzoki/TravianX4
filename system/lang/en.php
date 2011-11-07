@@ -67,4 +67,32 @@ $lang['login']['desc_1'] = 'Log into game';
 $lang['login']['desc_2'] = 'You must have cookies enabled to be able to log in. If you share this computer with other people you should log out after each session for your own safety.';
 $lang['login']['desc_3'] = 'JavaScript is deactivated. You must activate it in your browser settings to be able to play Travian.';
 $lang['login']['desc_4'] = 'Low resolution and low bandwidth version<br />(Notice: reduced map feature set)';
+
+/**
+ * REGISTER
+ */
+$lang['register']['desc_1'] = 'Register';
+$lang['register']['desc_2'] = 'Name';
+$lang['register']['desc_3'] = 'Email';
+$lang['register']['desc_4'] = 'Password';
+$lang['register']['desc_5'] = 'User data';
+$lang['register']['desc_6'] = 'Choose tribe';
+$lang['register']['desc_7'] = 'If you want to see a summary of advantages and disadvantages for each tribe, you can read the specifics <a href="http://t4.answers.travian.com/index.php?aid=7#go2answer" target="_blank">here</a>.<br /><br /> We recommend you choose the Gaul tribe if you are new to Travian.';
+$lang['register']['desc_8'] = 'Starting position';
+$lang['register']['desc_9'] = 'More information';
+$lang['register']['desc_10'] = 'I accept the <a href="http://www.travian.com/agb.php" target="_blank">general terms and conditions</a>, the <a href="http://www.travian.com/agb.php" target="_blank">privacy policy</a> and the <a href="http://www.travian.com/spielregeln.php" target="_blank">game rules</a>.';
+
+$lang['register']['position_1'] = 'Random';
+$lang['register']['position_2'] = 'North west (-|+)';
+$lang['register']['position_3'] = 'North east (+|+)';
+$lang['register']['position_4'] = 'South west (-|-)';
+$lang['register']['position_5'] = 'South east (+|-)';
+
+/**
+ * TRIBES
+ */
+$lang['tribe']['romans'] = 'Romans';
+$lang['tribe']['teutons'] = 'Teutons';
+$lang['tribe']['gauls'] = 'Gauls';
+
 ?>

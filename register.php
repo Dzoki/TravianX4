@@ -16,10 +16,10 @@ include('system/lang/en.php');
 | TEMPLATE
 |---------------------------------------------------------------
 |
-| This line includes the index template from templates folder.
+| This line includes the register template from templates folder.
 |
 */	
 
-include('templates/index.tpl');
+include('templates/register.tpl');
 
 ?>
