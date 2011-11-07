@@ -163,6 +163,27 @@ class database {
         return $data;
     }
     
+      /**
+     * Cleans $string for a MySQL statement
+     *
+     * @param String $string
+     * @return String
+     */
+    function clean_sql($string, $quotes = 1)
+    {
+        
+        // Stripslashes
+        if (get_magic_quotes_gpc())
+        {
+            $string = stripslashes($string);
+        }
+        // Quote if not integer
+        if (!is_numeric($string) && $quotes)
+        {
+            $string = "'".mysql_real_escape_string($string)."'";
+        }
+        return $string;
+    }
     
     
     /**
