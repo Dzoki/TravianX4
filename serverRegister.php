@@ -4,7 +4,7 @@
 | DO NOT REMOVE OR EDCOPYRIGHT NOTICE
 |---------------------------------------------------------------
 |
-| Developers:   Dzoki & Advocaite & SlimShady95
+| Developers:   Dzoki & Advocaite
 | Project:      TravianX4
 | Copyright:    TravianX Project
 |
