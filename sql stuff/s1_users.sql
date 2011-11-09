@@ -34,6 +34,7 @@ CREATE TABLE IF NOT EXISTS `s1_users` (
   `tribe` tinyint(1) unsigned NOT NULL,
   `access` tinyint(1) unsigned NOT NULL DEFAULT '1',
   `gold` int(9) unsigned NOT NULL DEFAULT '0',
+  `silver` int(9) unsigned NOT NULL DEFAULT '0',
   `gender` tinyint(1) unsigned NOT NULL DEFAULT '0',
   `birthday` date NOT NULL DEFAULT '0000-00-00',
   `location` text NOT NULL,
