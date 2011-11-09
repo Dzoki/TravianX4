@@ -9,16 +9,17 @@
 | Copyright:    TravianX Project
 |
 */
+
 define('HOST',"localhost");
 define('USER',"root");
-define('PASSWORD',"localhost");
-define('DATABASE',"trav4x");
+define('PASSWORD',"");
+define('DATABASE',"travian");
 define('PREFIX','s1_');
+
 define('MAX_USR_LENGHT',15);
 define('MIN_USR_LENGHT',3);
 define('MIN_PW_LENGHT',4);
 
 
-include ('database.class.php');
 include ('user.class.php');       
 ?>

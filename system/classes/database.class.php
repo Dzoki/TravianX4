@@ -10,7 +10,7 @@
 | Copyright:    TravianX Project
 |
 */
-
+    
 	include ('../configs/config.php');
 
 /**

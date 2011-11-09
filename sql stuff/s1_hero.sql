@@ -46,9 +46,5 @@ CREATE TABLE `s1_hero` (
   PRIMARY KEY (`heroid`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
-/*Data for the table `s1_hero` */
-
-insert  into `s1_hero`(`heroid`,`uid`,`unit`,`name`,`wref`,`level`,`points`,`experience`,`dead`,`health`,`attack`,`defence`,`attackbonus`,`defencebonus`,`regeneration`,`autoregen`,`trainingtime`,`color`,`face`,`eye`,`eyebrow`,`nose`,`mouth`,`ear`,`hair`,`beard`,`left_hand`,`right_hand`,`chest`,`feet`,`head`) values (1,5,2,'noname',1,0,0,1,0,100.000000000,10,10,10,10,10,10,0,'red',2,3,0,4,2,3,1,3,'lefthand_none','item2','item5','item6','none');
-
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
