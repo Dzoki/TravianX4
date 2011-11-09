@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=us-ascii" />
 
     <title><?php echo $lang['index']['title']; ?></title>
-    <link rel="stylesheet" type="text/css" href="gpack/main_default/lang/en/compact.css" />
+    <link rel="stylesheet" type="text/css" href="gpack/main_default/lang/en/compact2.css" />
     <meta name="content-language" content="au" />
     <meta http-equiv="imagetoolbar" content="no" />
     <script type="text/javascript" src="uncrypt.js">
