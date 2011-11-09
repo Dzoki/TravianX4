@@ -22,7 +22,7 @@
 		 *
 		 * @var array
 		 */
-		private $_data = array('server' => '', 'user' => '', 'password' => '', 'database' => '');
+		private $_data = array('server' => HOST, 'user' => USER, 'password' => PASSWORD, 'database' => DATABASE);
 
 
 		/**
@@ -192,20 +192,26 @@
 			} else {
 				$sql = "SELECT email FROM `" . PREFIX . "users` WHERE email = '$ref' LIMIT 1";
 			}
-			$result = $this->query($sql)if($this->num($result)) {
+			$result = $this->query($sql);
+            if($this->num($result)) {
 				return true;
 			} else {
 				return false;
 			}
 		}
+        
+        /**
+        * Register new player
+        */
+        public function register($username, $password, $email, $tribe) {
+            $sql = 'INSERT INTO `' . PREFIX . 'users` (`id`, `username`, `password`, `email`, `tribe`, `access`, `gold`) VALUES (NULL, \'$username\', \'' . md5($password) . '\', \'$email\', \'$tribe\', \'1\', \'0\')';
+            $this->query($sql);
+            $uid = mysql_insert_id();
+            $sql2 = 'INSERT INTO `' . PREFIX . 'hero` (`heroid`, `uid`, `name`) VALUES (NULL, \'$uid\', \'$username\')';  
+            $this->query($sql2);
+        }
 	}
 
-/**
- * Register new player
- */
-	public function register($username, $password, $email, $tribe) {
-		$sql = 'INSERT INTO `' . PREFIX . 'users` (`id`, `username`, `password`, `email`, `tribe`, `access`, `gold`) VALUES (NULL, \'$username\', \'' . md5($password) . '\', \'$email\', \'$tribe\', \'1\', \'0\')';
-		$this->query($sql);
-	}
+
 
 ?>

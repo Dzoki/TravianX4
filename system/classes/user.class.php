@@ -11,16 +11,16 @@
 |
 */
 
-	include ('database.class.php');
-	include ('../configs/config.php');
+
 
 /**
  * User Class
  */
 
-	class user {
+	class user extends database{
 
 		function user() {
+         parent::database();   
 			if(isset($_POST['type'])) {
 				switch($_POST['type']) {
 					case 'register':
@@ -40,14 +40,13 @@
 		 * Function that registers player
 		 */
 		function register() {
-			global $database;
 			if(!isset($_POST['username']) || $_POST['username'] == '') {
 				$error['register']['username'] = '(Username empty)';
 			} else {
 				if(strlen($_POST['username']) < MIN_USR_LENGHT) {
 					$error['register']['username'] = '(Min. ' . MIN_USR_LENGHT . ' figures)';
 				} else
-					if($database->check_exists($_POST['username'], 0)) {
+					if(database::check_exists($_POST['username'], 0)) {
 						$error['register']['username'] = '(Username taken)';
 					}
 
@@ -68,7 +67,7 @@
 				if(!$this->check_email($_POST['email'])) {
 					$error['register']['email'] = '(Email invalid)';
 				} else
-					if($database->check_exists($_POST['email'], 1)) {
+					if(database::check_exists($_POST['email'], 1)) {
 						$error['register']['email'] = '(Email already taken)';
 					}
 			}
@@ -80,7 +79,7 @@
 					'You have to agree to the game rules and the general terms & conditions in order to register.';
 			}
             else{
-                $database->register($_POST['username'], $_POST['password'], $_POST['email'], $_POST['vid']);
+                database::register($_POST['username'], $_POST['password'], $_POST['email'], $_POST['vid']);
             }
 		}
 
